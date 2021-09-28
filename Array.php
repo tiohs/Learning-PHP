@@ -55,15 +55,17 @@
   <br>
   <h1>Array Pesquisa PHP </h1>
   <br>
-  
+  <h2>in_array - ele retorna true para o parametro que esta a ser procurado </h2>
+  <h2>array_search - ele retorna o indece ao valor pesquisa no array </h2>
   <?php 
-    $lista_coisas = [
-      ['Hamilton silva', 'Carlos José'],
-      ['Banana', 'Morango']
-    ]
+    $lista_frutas = array('Banana', 'Maçã', 'Morango', 'Uva');
+    echo '<br>';
+    echo '<pre>';
+    var_dump($lista_frutas);
+    echo '<pre>';
+    echo '<br>';
+    echo 'Se existe banana : ' . in_array('Banana', $lista_frutas);
   ?>
-  <pre>
-    <?=var_dump($lista_coisas)?>
-  </pre>
+  
 </body>
 </html>
