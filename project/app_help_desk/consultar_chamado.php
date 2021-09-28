@@ -1,3 +1,9 @@
+<?php
+session_start();
+  if(!$_SESSION['token']){
+    header('Location: index.php');
+  }
+?>
 <html>
   <head>
     <meta charset="utf-8" />
