@@ -1,8 +1,14 @@
+<?php
+session_start();
+  if(!$_SESSION['token']){
+    header('Location: index.php');
+  }
+?>
 <html>
   <head>
     <meta charset="utf-8" />
     <title>App Help Desk</title>
-    <link rel="stylesheet" href="./css/bootstrp.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
     <style>
       .card-abrir-chamado {
         padding: 30px 0 0 0;
