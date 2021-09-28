@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Variaveis Constante </title>
 </head>
 <body>
   <?php 
-    $firstName = "";
-    $lastName = "Silva";
-  ?>
+    define("pi", '298321');
+    define("carro", 298321);
 
-  <h1>Ficha de Cadastro </h1>
-  <br>
-  <p>Nome completo : <?= $firstName." ".$lastName ?></p>
+    if(!pi xor !!carro) {
+      echo "Eu tenho que aparecer ";
+    }
+  ?>
 </body>
 </html>
