@@ -1,8 +1,5 @@
-<?php
-session_start();
-  if(!$_SESSION['token']){
-    header('Location: index.php');
-  }
+<?php 
+  require_once "./middleware/auth.php";
 ?>
 <html>
   <head>
