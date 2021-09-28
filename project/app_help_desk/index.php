@@ -1,4 +1,9 @@
-
+<?php 
+  session_start();
+  if($_SESSION['token']){
+    header('Location: home.php');
+  }
+?>
 <html>
   <head>
     <meta charset="utf-8" />
