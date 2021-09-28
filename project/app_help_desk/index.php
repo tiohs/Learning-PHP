@@ -1,3 +1,4 @@
+
 <html>
   <head>
     <meta charset="utf-8" />
@@ -39,6 +40,16 @@
                 <div class="form-group">
                   <input type="password" name="password" class="form-control" placeholder="Senha">
                 </div>
+                <?php
+                if(isset($_GET['login']) && $_GET['login'] == 'erro') {
+                  echo $_GET['login'];
+                ?>
+                <div class="text-danger">
+                  Senha ou usuário errado 
+                </div>
+                <?php 
+                  }
+                ?>
                 <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
               </form>
             </div>
