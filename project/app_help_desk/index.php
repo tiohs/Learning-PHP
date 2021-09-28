@@ -1,6 +1,6 @@
 <?php
 session_start();
-  if(!!$_SESSION['token']){
+  if(isset($_SESSION['token'])){
     header('Location: home.php');
   }
 ?>
@@ -38,7 +38,7 @@ session_start();
               Login
             </div>
             <div class="card-body">
-              <form action = "valida_login.php" method="post">
+              <form action = "/script/valida_login.php" method="post">
                 <div class="form-group">
                   <input type="email" name="email" class="form-control" placeholder="E-mail">
                 </div>
