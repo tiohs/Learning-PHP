@@ -16,6 +16,6 @@
     }
   }
   
-  $user_auth ? header('Location: ../index.php') : header('Location: ../index.php?login=erro');
+  $user_auth ? header('Location: ../home.php') : header('Location: ../index.php?login=erro');
 
 ?>

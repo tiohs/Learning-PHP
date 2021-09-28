@@ -1,6 +1,6 @@
 <?php
 session_start();
-  if(!$_SESSION['token']){
+  if($_SESSION['token'] !== true){
     header('Location: index.php');
   }
 ?>

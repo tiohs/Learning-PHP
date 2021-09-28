@@ -1,9 +1,4 @@
-<?php
-session_start();
-  if(isset($_SESSION['token'])){
-    header('Location: home.php');
-  }
-?>
+
 <html>
   <head>
     <meta charset="utf-8" />
