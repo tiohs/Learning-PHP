@@ -10,14 +10,21 @@
 
     // Metodos 
 
-    function getCodFunc () {
+    // function getCodFunc () {
+    //   return 'Esse é o resumo do cadastro do funcionario !';
+    // }
 
-    }
+    // function setNumChild () {
 
-    function setNumChild () {
-      
+    // }
+
+    // getters setters (overloadigng / sobrecargar )
+
+    function __set($attribute, $value){
+      $this->$attribute = $value;
     }
   }
+
 
 
 ?>
