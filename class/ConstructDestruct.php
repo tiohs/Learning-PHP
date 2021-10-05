@@ -11,9 +11,14 @@
     function __get($atrribute){
       return $this->$atrribute;
     }
+
+    function __destruct(){
+      echo 'Eliminar';
+    }
   }
 
   $person = new Person('Hamilton Silva');
   echo 'Eu sou o : '.$person->__get('name');
-
+  echo '<br />';
+  unset($person); // Remover objetos 
 ?>
